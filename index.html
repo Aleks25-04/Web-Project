@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqja ime personale</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="img/une1.jpg">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h2>Welcome</h2>
+        <h3>Contact me: 069 *** ***</h3>
+
+    </header>
+    <nav>
+        <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Shortcodes</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="profile">
+            <img src="img/une.jpg" alt="une" width="20%" height="20%">
+            <div class="info">
+                <h2>Pershendetje, une jam Aleks.</h2>
+                <p>Une jam nje dizanjues ne Web,dhe me pelqen te krijoj faqe webi.</p>
+                <p>Gjithashtu mund te me kontaktoni ne email: alekspillati001@gmail.com</p>
+            </div>
+        </div>
+        <div class="about">
+         <div>
+            <div class="about-text">
+                <h3>Rreth meje</h3>
+                <p>Une quhem Aleks, jam nga Korca dhe si hobi kam makinat, palestren dhe krijimin e faqeve ne web.</p>
+            </div>
+            <h3 class="p1">Portofolio</h3>
+            <div class="portofolio">
+               <img src="img/laptop.jpg" alt="nje laptop">
+              <div class="portofolio1">
+                <h3>Projekt 1</h3>
+                <p>Ky eshte projekti im i pare dhe i thjeshte. Jo shume i nderlikuar duke bere qe te kuptohet edhe lehte.</p>
+              </div>
+            </div>
+                <h4>Arsimi im</h4>
+                <table border="2px">
+                 <tr>
+                    <th>Arsimi</th>
+                    <th>Shkolla</th>
+                 </tr>
+                 <tr>
+                    <td>9 Vjecar</td>
+                    <td>Sotir Gura</td>
+                 </tr>
+                 <tr>
+                    <td>Gjimnaz</td>
+                    <td>Faik Konica</td>
+                 </tr>
+                 <tr>
+                    <td>Universitet</td>
+                    <td>Fan S. Noli</td>
+                 </tr>
+                </table>   
+            </div>
+            <div class="contact">
+                <h3>Nje video me muzike relaksuese</h3>
+                <iframe src="https://www.youtube.com/embed/UOJ4V3DAAx8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Per kontaktim</h4>
+                <form action="/submit" method="post">
+                 <label for="emri">Emri:</label><br>
+                 <input type="text" id="emri" placeholder="Emri" name="emri" required><br><br>
+                 <label for="mbiemri">Mbiemri:</label><br>
+                 <input type="text" id="mbiemri" placeholder="Mbiemri" name="mbiemri" required><br><br>
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                 <input class="submit" type="submit" value="Dergo">
+              </form>
+            </div>
+        
+        </div>
+    </main>
+     <footer>
+            <a href="#">Back to top</a>
+        </footer>
+    </div>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // stops the page from reloading or throwing an error
+  const emri = document.querySelector('input[name="emri"]').value;
+  const mbiemri = document.querySelector('input[name="mbiemri"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+
+  console.log("Emri:", emri);
+  console.log("Mbiemri:", mbiemri);
+  console.log("Email:", email);
+
+  alert("Faleminderit për kontaktin " + emri + "!");
+});
+
+    </script>
+
+</body>
+</html>
